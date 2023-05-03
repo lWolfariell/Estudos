@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Advinha</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        /*
+        Em seguida, perguntamos para o usuário 
+        "chutar" um número, ele deve tentar adivinhar 
+        o que o computador pensou. E com o número 
+        fornecido verificamos se o usuário estava certo.*/
+
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function sorteia(n) {
+            return Math.round(Math.random() * n);
+        }
+
+
+        let numeroPensado = sorteia(10);
+
+        let chute = parseInt(prompt("Já pensei. Qual você acha que é?"))
+
+        if (chute == numeroPensado) {
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+
+        } else {
+            
+            if (chute > numeroPensado) {
+                mostra("Você errou! Seu chute é maior que o número pensado! " + numeroPensado);
+
+            } else {
+
+                mostra("Você errou! Seu chute é menor que o número pensado! " + numeroPensado);
+            }
+
+        }
+
+        /*DESAFIOS
+
+1 - Você pode criar uma função sorteia que recebe 
+um número n e sorteia um número entre 0 a n, retornando 
+esse valor.
+  Dessa forma, em vez de escrever 
+  var numeroPensado = Math.round(Math.random() * n);
+  , você escreveria var numeroPensado = sorteia(n);.
+   Faça essa modificação, criando a nova função e utilize-a.
+
+2 - Faça com que seu jogo mostre, quando o usuário errar 
+a tentativa, se o número que ele chutou era maior ou menor 
+ao número pensado pelo programa.*/
+
+    </script>
+
+</body>
+
+</html>

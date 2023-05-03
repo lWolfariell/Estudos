@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa</title>
+</head>
+
+<body>
+
+
+    <script>
+        /* function pulaLinha() {
+             document.write("<br>");
+         }
+ 
+         function mostra(frase) {
+             document.write(frase);
+             pulaLinha();
+         }
+ 
+         let limite = parseInt (prompt("Entre com a data limite"));
+ 
+         let anoCopa = 1930;
+ 
+         //repita
+         
+         while (anoCopa <= limite) {
+ 
+             alert("Teve copa em " + anoCopa);
+         anoCopa = anoCopa + 4;
+ 
+         }
+ 
+         alert ("FIM");*/
+
+        let loginCadastrado = "lWolfariell";
+        let senhaCadastrada = "alura321";
+
+        
+
+        let maximoTentativas = 3;
+        let tentativaAtual = 1;
+
+        while (tentativaAtual <= maximoTentativas) {
+
+            let loginInformado = prompt("Informe seu login");
+            let senhaInformada = prompt("informe sua senha");
+
+            if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+
+                alert("Bem-vindo ao sistema " + loginInformado);
+                tentativaAtual = maximoTentativas;
+
+            } else {
+
+                if (tentativaAtual == 3) {
+
+                    alert("Número permitido de tentativas ultrapassado!");
+
+                } else {
+
+                    alert("Login Inválido. Tente novamente");
+                }
+
+            }
+            tentativaAtual = tentativaAtual + 1
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

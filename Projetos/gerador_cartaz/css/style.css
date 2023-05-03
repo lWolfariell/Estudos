@@ -1,0 +1,25 @@
+
+.layoutClient {
+    width: 30%;
+    float: left;
+    background-color: azure;
+}
+
+input.{
+
+    width: 60px;
+    height: 60px;
+}
+
+.resultado{
+    width: 70%;
+    float: right;
+    background-color: gainsboro;
+}
+
+td, tr {
+    width: 268px;
+    height: 144px;
+    border: solid 1px;
+    text-align: center;
+}   
