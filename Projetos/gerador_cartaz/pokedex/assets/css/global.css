@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -26,4 +27,34 @@ ol.pokemons li {
     color: #fff;
     height: 100px;
 
+=======
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+ol.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol.pokemons li {
+    margin: 0.5rem;
+    padding: 2rem 1rem;
+    background-color: #14A06F;
+    border-radius: 1rem;
+    color: #fff;
+    height: 100px;
+
+>>>>>>> ba92442e26652e6cc0f2d1dbb1f9bfb272676897
 }

@@ -1,0 +1,112 @@
+<<<<<<< HEAD
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+    
+    
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+    
+    
+}
+.menu {
+    width: 15%;
+    background-color: aqua;
+    padding: 10px 20px 0px;  
+    
+    
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    max-height: 300px;
+    
+    
+}
+.content {
+    background-color: white;
+    position: relative;
+    min-height: 300px;
+    padding: 20px;
+       
+    
+}
+.footer {
+    background-color: rgb(99, 56, 240);
+    min-height: 150px;
+    
+    
+    
+    
+=======
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+    
+    
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+    
+    
+}
+.menu {
+    width: 15%;
+    background-color: aqua;
+    padding: 10px 20px 0px;  
+    
+    
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    max-height: 300px;
+    
+    
+}
+.content {
+    background-color: white;
+    position: relative;
+    min-height: 300px;
+    padding: 20px;
+       
+    
+}
+.footer {
+    background-color: rgb(99, 56, 240);
+    min-height: 150px;
+    
+    
+    
+    
+>>>>>>> 498085619e3a040f0a1b93ffde513ddac4f4a450
+}
