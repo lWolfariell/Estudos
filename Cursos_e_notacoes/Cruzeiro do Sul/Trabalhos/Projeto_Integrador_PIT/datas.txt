@@ -1,0 +1,97 @@
+   15/02/2022
+   03/07/2023
+   21/11/2024
+   09/05/2025
+   30/12/2026
+   25/11/2021
+   28/07/2020
+   01/04/2023
+
+
+   /(?:\b|\D)([0-9]{1,2})[- .\/]?([0-9]{1,2})[- .\/]?([0-9]{4})(?:\b|\D)/
+
+   para substituir
+
+   $2/$1/$3 >> observe que "$" seguido por um número (2, 1 e 3) refere-se aos grupos validados pela ordem desejada seguido "/"
+   que será incluso.
+
+
+
+(?:\b|\D) # Garante que não há dígitos antes da data
+[- .\/]? # Opcionaliza um separador
+([0-9]{1,2}) # Captura o mês (pode ser de 1 ou 2 dígitos)
+[- .\/]? # Opcionaliza um separador
+([0-9]{1,2}) # Captura o dia (pode ser de 1 ou 2 dígitos)
+([0-9]{4}) # Captura o ano
+(?:\b|\D) # Garante que não há dígitos depois da data
+
+
+() # Define um grupo
+? # opicional
+\b # inicio ou fim de palavra
+| # ou / operacao ou
+\D # corresponde a um caractere diferente de dígito.
+[] # Conjunto de caracteres permitido
+{1,2} # de 1 até 2
+/ # usado como delimitador da expressão
+\/ # nesse caso é para evitar ambiguidade quando "/" é necessario para ser validado
+
+
+Revisão - mapa mental:
+
+           Expressões Regulares (Regex)
+
+       +-----------------------+
+       |                       |
+       |   Caracteres Literais | Caracteres Literais: Representam caracteres que são correspondidos literalmente.
+       |                       |
+       +-----------+-----------+
+                    |
+                    |
+       +------------v------------+
+       |                        |
+       |   Metacaracteres        | Metacaracteres: São caracteres especiais com significados específicos, como ". ^ $ * + ? \ | ( ) [ ] { }".
+       |                        |
+       +-----------+------------+
+                    |
+                    |
+       +------------v------------+
+       |                        |
+       |   Grupos e Capturas     |Grupos e Capturas: Permitem agrupar partes da expressão e capturar o texto correspondente para uso posterior.
+       |                        |
+       +-----------+------------+
+                    |
+                    |
+       +------------v------------+
+       |                        |
+       |   Quantificadores       |Quantificadores: Indicam a quantidade de ocorrências de um elemento, como "*", "+" e "?".
+       |                        |
+       +-----------+------------+
+                    |
+                    |
+       +------------v------------+
+       |                        |Classes de Caracteres: Representam um conjunto de caracteres que podem corresponder 
+       |   Classes de Caracteres |a um único caractere, como "[0-9]" para dígitos numéricos.
+       |                        |
+       +-----------+------------+
+                    |
+                    |
+       +------------v------------+
+       |                        |
+       |   Âncoras               |Âncoras: São usadas para delimitar onde a correspondência pode ocorrer, 
+       |                        |como "^" para início de linha e "$" para fim de linha.
+       +-----------+------------+
+                    |
+                    |
+       +------------v------------+
+       |                        |
+       |   Modificadores         |Modificadores: Alteram o comportamento padrão das expressões regulares, 
+       |                        |como "i" para fazer correspondência sem diferenciar maiúsculas de minúsculas.
+       +------------------------+
+
+
+você pode ver diferentes categorias de recursos e conceitos em expressões regulares.
+
+Essas são apenas algumas das categorias e conceitos em expressões regulares, e há muito mais 
+recursos e detalhes a serem explorados. O mapa mental pode servir como um guia básico para revisão, 
+mas é recomendado estudar mais a fundo cada conceito e suas aplicações na prática.
