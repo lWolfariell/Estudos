@@ -1,18 +1,15 @@
-   15/02/2022
-   03/07/2023
-   21/11/2024
-   09/05/2025
-   30/12/2026
-   25/11/2021
-   28/07/2020
-   01/04/2023
+  15/03/2022
+25/11/2021
+28/07/2020
+12/05/2023
+01/04/2023
 
 
-   /(?:\b|\D)([0-9]{1,2})[- .\/]?([0-9]{1,2})[- .\/]?([0-9]{4})(?:\b|\D)/
+   /(?:\b|\D)([0-9]{4})[- .\/]?([0-9]{1,2})[- .\/]?([0-9]{1,2})(?:\b|\D)/
 
    para substituir
 
-   $2/$1/$3 >> observe que "$" seguido por um número (2, 1 e 3) refere-se aos grupos validados pela ordem desejada seguido "/"
+   $3/$2/$1 >> observe que "$" seguido por um número (3, 2 e 1) refere-se aos grupos validados pela ordem desejada seguido "/"
    que será incluso.
 
 
@@ -95,3 +92,6 @@ você pode ver diferentes categorias de recursos e conceitos em expressões regu
 Essas são apenas algumas das categorias e conceitos em expressões regulares, e há muito mais 
 recursos e detalhes a serem explorados. O mapa mental pode servir como um guia básico para revisão, 
 mas é recomendado estudar mais a fundo cada conceito e suas aplicações na prática.
+
+
+Sucesso! Seu envio aparece nesta página. O número da confirmação do envio é f4b4e21290a248b296d2a15849541574. Copie e salve este número como prova de seu envio. Veja todos os seus comprovantes de envio em Minhas notas.
