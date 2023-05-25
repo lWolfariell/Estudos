@@ -8,36 +8,53 @@
     <title>Interpretador</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <img class="logoAlura" src="images/logo.png" alt="Logo da Alura">
-    </header>
+    <main class="main_container">
+        <header class="cabecalho">
 
-    <main>
-        <section>
-            <textarea class="text-area" name="DigiteTexto" id="textArea" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
-            
-            <div class="info">
+            <img class="logoAlura" src="images/logo.png" alt="Logo da Alura">
+            <h1>Decodificador e codificador</h1>
+        </header>
+
+        <section class="container-input">
+            <div class="input">
+                <textarea id="textArea" name="DigiteTexto" cols="41" rows="4" placeholder="Digite seu texto..."></textarea>
                 <h6>Apenas letras minusculas e sem acento</h6>
             </div>
-            
-            <div class="botoes">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
-                <button class="btn-deencriptar"onclick="btnDesencriptar()">Descriptografar</button>
+
+
+            <div id="output">
+                
+                <img class="boneco" src="images/boneco.png" alt="Imagem boneco">
+                <h2>Sua mensagem aparecerá aqui!</h2>
+                <!-- <span class="mensagem">Digite um text o que deseja Criptografar ou descriptografar.</span> -->
+                <textarea class="mensagem" name="TextoEncriptado" cols="20" rows="10"></textarea>
+                <button class="btn-copiar">Copiar</button>
             </div>
         </section>
 
-        <section>
-            <textarea class="mensagem" name="TextoEncriptado" cols="20" rows="10" readonly"></textarea>
-            <img class="boneco" src="images/boneco.png" alt="Imagem boneco">
-            <button class="btn-copiar">Copiar</button>
-        </section>
+        <div class="botoes">
+            <div class="container-bnt">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+            <button class="btn-deencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </div>
+
     </main>
+
+    <footer>
+        <div class="info">
+
+        </div>
+
+        
+    </footer>
 
 
 

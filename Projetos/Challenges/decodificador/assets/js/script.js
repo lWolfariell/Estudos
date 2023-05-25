@@ -1,4 +1,4 @@
-const textArea = document.querySelector('.text-area');
+const textArea = document.querySelector('#textArea');
 const mensagem = document.querySelector('.mensagem');
 
 // As "chaves" de criptografia que utilizaremos são:

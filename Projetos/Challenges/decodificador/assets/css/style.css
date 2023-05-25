@@ -1,72 +1,106 @@
 * {
-    background: #E5E5E5;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+    margin: 0;
+    padding: 0;    
 }
 
-.logoAlura {
-    position: absolute;
-    left: 4.27%;
-    right: 87.2%;
-    top: 25%;
-    bottom: 25%;
+body {
+    background: #E5E5E5;
 }
 
-main{
+.cabecalho{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    justify-content: space-between;
+    padding: 2%;
 }
 
-.text-area{
-    border: none;
-    color: #0A3871;
-    margin-top: 90px;
-    text-transform: lowercase;
-    position: absolute;
-    width: 680px;
-    height: 48px;
-    left: 240px;
-    top: 168px;
+.cabecalho h1 {
+    color: red;
 }
 
-::placeholder { color: #0A3871;}
-    .text-area:focus {
-        outline: none;
-    }
+.cabecalho img{
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
 
-.mensagem {
-    position: absolute;
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input{
     width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-
-    background: white;
-    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08); 
-    border-radius: 32px;
-    color: #0A3871;
-    
+    height: 330px;
 }
 
-.mensagem:focus{
-    outline: none;
+#textArea{
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: blue;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
 }
 
-.botoes{
+#output{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
+    flex-direction: column;
+    border: 3px solid blue;
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
 }
 
+#output h2{
+    text-align: center;
+    font-size: 25px;
+    color: blue;
+}
 
+#output span{
+    font-size: 16px;
+    text-align: center;
+}
+
+#output img{
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.container-bnt button{
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #017c76;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.btn-copiar{
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #017c76;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.container-bnt button:hover{
+    border: 2px solid #002b28;
+    transition: 0.5s all;
+ }
