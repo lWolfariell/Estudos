@@ -1,5 +1,5 @@
 const textArea = document.querySelector('#textArea');
-const mensagem = document.querySelector('.mensagem');
+const mensagem = document.querySelector('.msg span');
 
 // As "chaves" de criptografia que utilizaremos são:
 // A letra "e" é convertida para "enter"
@@ -10,8 +10,11 @@ const mensagem = document.querySelector('.mensagem');
 
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
-    mensagem.value = textoEncriptado;
+    mensagem.textContent = textoEncriptado;
     textArea.value = '';
+
+    const myImage = document.querySelector('.boneco');
+    myImage.classList.add('hide-image');
 }
 
 let matrizCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']];
@@ -32,8 +35,11 @@ function encriptar(stringEncriptada) {
 
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(textArea.value);
-    mensagem.value = textoDesencriptado;
+    mensagem.textContent = textoDesencriptado;
     textArea.value = '';
+
+    const myImage = document.querySelector('.boneco');
+    myImage.classList.add('hide-image');
 }
 
 function desencriptar(stringDesencriptada) {
