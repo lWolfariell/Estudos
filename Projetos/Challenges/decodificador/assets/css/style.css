@@ -15,7 +15,7 @@ body {
 }
 
 .cabecalho h1 {
-    color: blue;    
+    color: #0A3871;    
     font-family: 'Inter', sans-serif;
     font-size: 40px;
 }
@@ -42,7 +42,7 @@ body {
     width: 680px;
     height: 288px;
     font-size: 20px;
-    color: blue;
+    color: #0A3871;
     background: transparent;
     box-shadow: none;
     border: none;
@@ -75,7 +75,7 @@ h6 {
 
 #output h2{    
     font-size: 25px;
-    color: blue;
+    color: #0A3871;
 }
 
 .msg{
@@ -106,7 +106,6 @@ h6 {
     background: #0A3871;
     border-radius: 24px;
     text-decoration: none;
-    color: #017c76;
     width: 328px;
     height: 67px;
     cursor: pointer;
@@ -114,7 +113,7 @@ h6 {
     color: #FFFFFF;
 }
 
-.btn-deencriptar{
+.btn-desencriptar{
     background: #D8DFE8 !important;
     border: 1px solid #0A3871 !important;
     color: #0A3871 !important;
@@ -138,10 +137,14 @@ h6 {
 }
 
 
-.container-bnt button:hover{
-    border: 2px solid #002b28 !important;
+button:hover{
+    border: 2px solid #033d39 !important;
+    background: #495057 !important;
+    color: #FFFFFF !important;
     transition: 0.3s all !important;
  }
+
+
 
  .hide-image {
     opacity: 0;
