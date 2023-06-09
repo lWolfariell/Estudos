@@ -1,0 +1,45 @@
+/* Até o momento foi utilizado o Flexbox que é uma propriedade razoavelmente atual.
+Portanto, é preciso vericar ao utilizar essa propriedade, pois nem todos os
+navegadores a aceitam.
+
+Como recomendação é ideal consultar o site https://caniuse.com/
+basta digitar o nome da propriedade no campo de busca: */
+
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* adciona uma quebra e passa para outra parte passar por cima do footer */
+    /* flex-flow: column wrap; << esse exemplo possui o mesme efeito de flex direction + wrap */
+    height: 250px;
+}
