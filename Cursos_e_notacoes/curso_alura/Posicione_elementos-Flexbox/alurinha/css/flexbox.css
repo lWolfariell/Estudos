@@ -43,3 +43,102 @@ basta digitar o nome da propriedade no campo de busca: */
     /* flex-flow: column wrap; << esse exemplo possui o mesme efeito de flex direction + wrap */
     height: 250px;
 }
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+    margin-bottom: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) { /* acrescentar o nth-child(). Como queremos pegar o "quarto filho" adicionamos entre os parênteses o 4n */
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) { /* Portanto, tais objetos equivalem a 4+1, então, vamos escrever nth-child(4n+1) e colocar também a margin-left: 0: */
+    margin-left: 0;
+}
+
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2; /* Botao incorporado os espaço vazio */
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1; /* Botao incorporado os espaço vazio */
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2; /* reduza o video em até 2x conforme o tamanho da tela */
+}
+
+
+
+/* Parte mobile */
+
+@media(max-width: 768px){
+
+.cabecalhoPrincipal-nav {
+    flex-direction: column;
+}
+
+.cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+}
+
+.conteudoPrincipal-cursos{
+    flex-direction: column;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 100%;
+}
+
+.rodapePrincipal-navMap-list{
+    height: auto;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 100%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    justify-content: center;
+}
+
+.cabecalhoPrincipal-nav-link-app {
+    order: -1;
+}
+
+.videoSobre .container{
+    flex-direction: column;
+
+}
+
+.videoSobre-video{
+    margin: 0 auto;
+}
+
+}
