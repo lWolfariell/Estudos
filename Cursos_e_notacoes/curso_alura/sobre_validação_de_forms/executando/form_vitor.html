@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario||Vitor</title>
+
+    <style>
+        label {
+            display: block; 
+            margin: 2rem 0; 
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form" action="define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados" method="postdefine qual o método HTTP para enviar os dados ">
+        <fieldset>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" oninput="contagemCaracteres()" maxlength="30">
+            <p class="caracteresRestantes">Limite: 30</p>
+            <span id="mensagemErro"></span>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" oninput="contagemCaracteres()" maxlength="30">
+            <p class="caracteresRestantes">Limite: 30</p>
+            <span id="mensagemErro"></span>
+        </div>
+        <div>
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" oninput="contagemCaracteres()" maxlength="30">
+            <p class="caracteresRestantes">Limite: 30</p>
+            <span id="mensagemErro"></span>
+        </div>
+        <div>
+            <label for="textarea">Escreva sua mensagem aqui...</label>
+            <textarea name="mensagem" id="mensagem" oninput="contagemCaracteres()" maxlength="130"></textarea>
+            <p class="caracteresRestantes">Limite: 130</p>
+            <span id="mensagemErro"></span>
+        </div>
+    </fieldset>
+        
+    </form>
+
+    <input type="button" id="enviar" name="enviar" value="Enviar"/>
+
+
+    <script src="valida_form.js"></script>
+</body>
+</html>
