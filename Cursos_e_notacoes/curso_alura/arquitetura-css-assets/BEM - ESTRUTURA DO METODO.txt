@@ -1,0 +1,15 @@
+BEM - ESTRUTURA DO METODO
+
+Block Element Modifier
+
+Bloco Elemento Modificador
+
+dessa forma a estrutura dessa metodologia fica assim:
+
+bloco
+
+bloco__elemento
+
+bloco--modificador
+
+bloco__elemento--modificador
