@@ -46,11 +46,13 @@ function contagemCaracteres() {
   }
 
 
-/* function verificarNome(){
+function verificarNome(){
+    
+
     let nome = document.getElementById(nome);
     if (nome === '' || nome.length)
 }
- */
+
 
 
 
