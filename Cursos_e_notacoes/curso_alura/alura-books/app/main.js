@@ -13,5 +13,5 @@ async function getBuscarLivrosDaApi() {
     exibirOsLivrosNatela(livrosComDesconto)
 }
 
-
+console.log(livros)
 
